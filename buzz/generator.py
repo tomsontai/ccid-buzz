@@ -20,6 +20,15 @@ def generate_buzz():
         sample(verbs), buzz_terms[1]])
     return phrase.title()
 
+def holidaybush(n):
+    z = n - 1
+    x = 1
+    for i in range(n):
+        print(' ' * z + '+' * x + ' ' * z)
+        x+=2
+        z-=1
+
 if __name__ == "__main__":
     print(generate_buzz())
+    holidaybush(5)
 
